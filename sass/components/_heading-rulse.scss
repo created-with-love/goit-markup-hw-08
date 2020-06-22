@@ -1,0 +1,35 @@
+/* H2 */
+.section-heading {
+  margin-bottom: 50px;
+
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+}
+
+/* H3 */
+.third-heading {
+  margin-top: 30px;
+}
+
+.third-heading,
+.our-work-heading {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+
+.third-heading-par {
+  color: $second-text-color;
+}
+
+.third-heading-par {
+  font-size: 14px;
+  line-height: 1.71;
+}
+
+.clients-section .section-heading {
+  padding-top: 94px;
+}

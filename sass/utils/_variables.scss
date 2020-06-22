@@ -1,0 +1,36 @@
+$primaty-text-color: #212121;
+$second-text-color: #757575;
+$accent-color: #2196f3;
+$background-primaty-color: #e5e5e5;
+$background-second-color: #f5f4fa;
+$white: #ffffff;
+$footer-background: #2f303a;
+$icons-color: #afb1b8;
+$main-font: Roboto, sans-serif;
+
+%nav-theme {
+  display: inline-flex;
+  align-items: center;
+
+  font-family: $main-font;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+
+%centeringVar {
+  display: inline-flex;
+  align-items: center;
+  align-content: center;
+}
+
+%footer-logo-theme {
+  font-style: normal;
+  font-family: $main-font;
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 1.18;
+  letter-spacing: 0.03em;
+}

@@ -1,0 +1,68 @@
+.about-us-section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+
+  .about-us-list {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.about-us-item {
+  width: calc((100% - 87px) / 4);
+  /* width: 278px; */
+
+  .third-heading {
+    margin-bottom: 10px;
+  }
+
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+.about-us-img-box {
+  display: inline-flex;
+  align-items: center;
+  background-color: &background-second-color;
+
+  .about-us-list-icon {
+    display: inline-flex;
+    align-items: center;
+  }
+}
+
+.antenna-box {
+  padding: 25px 102px;
+}
+
+.antenna-icon {
+  width: 65px;
+  height: 70px;
+}
+
+.clock-box {
+  padding: 25px 102px;
+}
+
+.clock-icon {
+  width: 67px;
+  height: 70px;
+}
+
+.diagram-box {
+  padding: 33px 100px;
+}
+
+.diagram-icon {
+  width: 70px;
+  height: 54px;
+}
+
+.astronaut-box {
+  padding: 25px 100px;
+}
+.astronaut-icon {
+  width: 70px;
+  height: 70px;
+}

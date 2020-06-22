@@ -1,0 +1,64 @@
+.icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+}
+
+/* ==========================================
+Single-colored icons can be modified like so:
+.icon-name {
+  font-size: 32px;
+  color: red;
+}
+========================================== */
+
+.icon-brand-logo {
+  width: 1.2548828125em;
+}
+
+.icon-foster-peters-logo {
+  width: 1.8603515625em;
+}
+
+.icon-letter {
+  width: 1.4541015625em;
+}
+
+.icon-letter-hover {
+  width: 1.4541015625em;
+}
+
+.icon-pclogo {
+  width: 1.2958984375em;
+}
+
+.icon-phone {
+  width: 0.6669921875em;
+}
+
+.icon-phone-hover {
+  width: 0.6669921875em;
+}
+
+.icon-rag-line-logo {
+  width: 1.9345703125em;
+}
+
+.icon-tagline-company {
+  width: 0.76953125em;
+}
+
+.icon-twitter-for-footer {
+  width: 1.111328125em;
+}
+
+.icon-unnamed-company {
+  width: 0.9765625em;
+}
+
+.icon-ya-co-logo {
+  width: 0.900390625em;
+}
