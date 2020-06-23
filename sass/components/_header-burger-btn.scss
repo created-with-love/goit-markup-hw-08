@@ -1,0 +1,37 @@
+.menu-button {
+  display: inline-flex;
+  position: absolute;
+  right: 15px;
+  bottom: 10px;
+
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+
+  &:focus {
+    outline: none;
+  }
+  @media screen and (min-width: 767px) {
+    display: none;
+  }
+}
+
+.menu-button:hover .icon-menu,
+.menu-button:focus .icon-menu,
+.menu-button:hover .icon-cross,
+.menu-button:focus .icon-cross {
+  fill: $accent-color;
+}
+
+.menu-button .icon-cross {
+  display: none;
+}
+
+.menu-button.is-open .icon-cross {
+  display: block;
+}
+
+.menu-button.is-open .icon-menu {
+  display: none;
+}

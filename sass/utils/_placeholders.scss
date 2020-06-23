@@ -1,0 +1,23 @@
+%nav-theme {
+  font-family: $main-font;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+
+%centeringVar {
+  display: inline-flex;
+  align-items: center;
+  align-content: center;
+}
+
+%footer-logo-theme {
+  font-style: normal;
+  font-family: $main-font;
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 1.18;
+  letter-spacing: 0.03em;
+}

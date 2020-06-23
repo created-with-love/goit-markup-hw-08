@@ -1,0 +1,99 @@
+.about-us-section {
+  display: flex;
+  padding-top: 94px;
+  padding-bottom: 94px;
+  justify-content: center;
+
+  .about-us-list {
+    @media screen and (min-width: 780px) {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }
+}
+
+.about-us-item {
+  max-width: 450px;
+
+  @media screen and (max-width: 479px) {
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
+  @media screen and (min-width: 780px) {
+    max-width: 354px;
+  }
+
+  @media screen and (min-width: 780px) and (max-width: 1199px) {
+    &:not(:nth-last-child(2n + 1)) {
+      margin-right: 30px;
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    max-width: 270px;
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
+
+  .third-heading {
+    margin-bottom: 10px;
+    margin-top: 30px;
+    text-align: center;
+
+    @media screen and (min-width: 1200px) {
+      &:not(:last-child) {
+        margin-right: 30px;
+      }
+    }
+  }
+}
+
+.about-us-img-box {
+  display: inline-flex;
+  align-items: center;
+  background-color: $background-second-color;
+
+  .about-us-list-icon {
+    display: inline-flex;
+    align-items: center;
+    width: 450px;
+    max-width: 100%;
+  }
+}
+
+.antenna-box {
+  padding: 25px 0px;
+}
+
+.antenna-icon {
+  width: 65px;
+  height: 70px;
+}
+
+.clock-box {
+  padding: 25px 0px;
+}
+
+.clock-icon {
+  width: 67px;
+  height: 70px;
+}
+
+.diagram-box {
+  padding: 33px 0px;
+}
+
+.diagram-icon {
+  width: 70px;
+  height: 54px;
+}
+
+.astronaut-box {
+  padding: 25px 0px;
+}
+.astronaut-icon {
+  width: 70px;
+  height: 70px;
+}

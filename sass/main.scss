@@ -1,26 +1,31 @@
 @import './utils/variables';
 @import './base/normalize';
 @import './base/nullifier';
+@import './utils/placeholders';
+@import './utils/breakpoints';
 
 @import './components/common';
-@import './components/heading-rulse';
-@import './components/page-header';
+
+// хедер
 @import './components/header';
+@import './components/drop-down-mobile-menu';
+@import './components/header-burger-btn';
 
+// секция-герой
 @import './components/hero-section';
-@import './components/hero-button';
+@import './components/hero_btn';
 @import './components/backdrop';
-
-@import './components/deep_modal_fields-rules';
 @import './components/modal_checkbox';
+@import './components/hero-section-modal';
 
-@import './components/about-us-section';
-@import './components/what-are-we-doing';
-@import './components/our-team';
-@import './components/our-clients';
+// Секция о нашей студии
+@import './components/about_us_section';
 
-@import './components/styles-for-portfolio';
-@import './components/portfolio-list';
-@import './components/buttons-filters';
+// Секция : Чем мы занимаемся
+@import './components/wawd_section';
 
-@import './components/footer';
+// секция нашей команды
+@import './components/our-team-section';
+
+// секция клиентов
+@import './components/our-clients-section';

@@ -1,0 +1,50 @@
+.wawd-secton {
+  display: none;
+  padding-top: 94px;
+  padding-bottom: 94px;
+
+  .worklist {
+    display: flex;
+    text-align: center;
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: block;
+  }
+}
+
+.worklist-item {
+  position: relative;
+
+  border-radius: 4px;
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+
+  .our-work-img {
+    display: block;
+  }
+}
+.our-work-heading {
+  position: absolute;
+  bottom: 0;
+
+  width: 100%;
+  color: $white;
+  font-size: 14px;
+  line-height: 1.14;
+  background: rgba(47, 48, 58, 0.8);
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  letter-spacing: 0.03em;
+}
+
+.our-work-heading.first {
+  padding: 27px 82px 27px 83px;
+}
+.our-work-heading.second {
+  padding: 27px 85px;
+}
+.our-work-heading.third {
+  padding: 27px 90px;
+}

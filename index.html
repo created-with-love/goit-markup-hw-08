@@ -8,8 +8,6 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
-    <!-- <link rel="stylesheet" href="./css/common.css" />
-    <link rel="stylesheet" href="./css/style.css" /> -->
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
@@ -20,49 +18,73 @@
           <span class="header-nav__logo-web">Web</span
           ><span class="header-nav__logo-studio"> Studio</span>
         </a>
-        <ul class="site-nav">
-          <li>
-            <a href="./index.html" class="site-nav__link site-nav__link--chosen"
-              >Студия</a
-            >
-          </li>
-          <li>
-            <a href="./portfolio.html" class="site-nav__link">Портфолио</a>
-          </li>
-          <li><a href="" class="site-nav__link">Контакты</a></li>
-        </ul>
 
-        <ul class="contacts">
-          <li>
-            <a href="mailto:info@devstudio.com" class="contacts-link">
-              <svg class="icon-letter-logo" width="16px" height="11px">
-                <use href="./images/symbol-defs.svg#icon-letter"></use>
-              </svg>
+        <div class="menu-container" data-menu>
+          <ul class="site-nav">
+            <li class="site-nav__item">
+              <a
+                href="./index.html"
+                class="site-nav__link site-nav__link--chosen"
+                >Студия</a
+              >
+            </li>
+            <li class="site-nav__item">
+              <a href="./portfolio.html" class="site-nav__link">Портфолио</a>
+            </li>
+            <li class="site-nav__item">
+              <a href="" class="site-nav__link">Контакты</a>
+            </li>
+          </ul>
 
-              <span>info@devstudio.com</span></a
-            >
-          </li>
+          <ul class="contacts">
+            <li class="contacts__item">
+              <a href="mailto:info@devstudio.com" class="contacts__link">
+                <svg class="contacts__letter-logo" width="16px" height="11px">
+                  <use href="./images/symbol-defs.svg#icon-letter"></use>
+                </svg>
 
-          <li>
-            <a href="tel:+380961111111" class="contacts-link">
-              <svg class="icon-phone-logo" width="10px" height="15px">
-                <use href="./images/symbol-defs.svg#icon-phone"></use>
-              </svg>
-              <span>+38 096 111 11 11</span></a
-            >
-          </li>
-        </ul>
+                <span class="contacts__text">info@devstudio.com</span></a
+              >
+            </li>
+
+            <li class="contacts__item">
+              <a href="tel:+380961111111" class="contacts__link">
+                <svg class="contacts__phone-logo" width="10px" height="15px">
+                  <use href="./images/symbol-defs.svg#icon-phone"></use>
+                </svg>
+                <span class="contacts__text">+38 096 111 11 11</span></a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <button
+          type="button"
+          class="menu-button"
+          aria-expanded="false"
+          aria-controls="menu-container"
+          data-menu-button
+        >
+          <svg
+            width="40"
+            height="40"
+            aria-label="Переключатель мобильного меню"
+          >
+            <use class="icon-cross" href="./images/symbol-defs.svg#cross"></use>
+            <use class="icon-menu" href="./images/symbol-defs.svg#menu"></use>
+          </svg>
+        </button>
       </nav>
     </header>
     <main class="page">
       <!-- Herou -->
       <section class="hero-section">
-        <div class="hero-item">
+        <div class="hero-section__item">
           <h1 class="main-heading">
             Эффективные решения <br />
             для вашего бизнеса
           </h1>
-          <button class="hero-button" data-open-modal>
+          <button class="hero-section__button" data-open-modal>
             Заказать услугу
           </button>
         </div>
@@ -164,7 +186,7 @@
               alt="фото члена команды"
               width="270"
             />
-            <h3 class="team-member-name">John Smith</h3>
+            <h3 class="team-member-name">Николай Кучеренко</h3>
             <p class="team-member-position">Product Designer</p>
             <ul class="social-links-box">
               <li class="social-links-box-item">
@@ -203,7 +225,7 @@
               alt="фото члена команды"
               width="270"
             />
-            <h3 class="team-member-name">Marta Stewart</h3>
+            <h3 class="team-member-name">Ольга Иванова</h3>
             <p class="team-member-position">Frontend Developer</p>
             <ul class="social-links-box">
               <li class="social-links-box-item">
@@ -242,7 +264,7 @@
               alt="фото члена команды"
               width="270"
             />
-            <h3 class="team-member-name">Robert Jakis</h3>
+            <h3 class="team-member-name">Андрей Шевченко</h3>
             <p class="team-member-position">Marketing</p>
             <ul class="social-links-box">
               <li class="social-links-box-item">
@@ -281,7 +303,7 @@
               alt="фото члена команды"
               width="270"
             />
-            <h3 class="team-member-name">Martin Doe</h3>
+            <h3 class="team-member-name">Иван Николаев</h3>
             <p class="team-member-position">UI Designer</p>
             <ul class="social-links-box">
               <li class="social-links-box-item">
@@ -556,40 +578,7 @@
         </button>
       </div>
     </div>
-    <script>
-      // скрипт для добавления класса модальному окну
-      const refs = {
-        openModalBtn: document.querySelector('[data-open-modal]'),
-        closeModalBtn: document.querySelector('[data-close-modal]'),
-        backdrop: document.querySelector('[data-backdrop]'),
-      };
-
-      refs.openModalBtn.addEventListener('click', toggleModal);
-      refs.closeModalBtn.addEventListener('click', toggleModal);
-
-      refs.backdrop.addEventListener('click', logBackdropClick);
-
-      function toggleModal() {
-        refs.backdrop.classList.toggle('is-hidden');
-      }
-
-      function logBackdropClick() {
-        console.log('Это клик в бекдроп');
-      }
-      // скрипт для отправки данных через форму в нашу консоль
-      (() => {
-        document
-          .querySelector('.js-speaker-form')
-          .addEventListener('submit', e => {
-            e.preventDefault();
-
-            new FormData(e.currentTarget).forEach((value, name) =>
-              console.log(`${name}: ${value}`),
-            );
-
-            e.currentTarget.reset();
-          });
-      })();
-    </script>
+    <script src="./js/menu.js"></script>
+    <script src="./js/backdrop-modal.js"></script>
   </body>
 </html>

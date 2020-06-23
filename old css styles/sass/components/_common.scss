@@ -1,5 +1,5 @@
 .page {
-  color: $primaty-text-color;
+  color: var(--primaty-text-color);
 
   font-family: $main-font;
   font-style: normal;
@@ -15,15 +15,9 @@
 }
 
 .section {
+  width: 1200px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
-
-  @media screen and (min-width: 780px) {
-    width: 768px;
-  }
-  @media screen and (min-width: 1200px) {
-    width: 1200px;
-  }
 }

@@ -1,0 +1,215 @@
+.form-list-item__input:focus + .form-list-label {
+  border-color: $accent-color;
+  border-radius: 4px;
+}
+
+.form-list-item__input:focus + .label-name,
+textarea:focus + .label-name {
+  transform: translate(-30px, -30px);
+
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+  color: $accent-color;
+}
+
+.textarea-label-name {
+  position: absolute;
+  left: 22px;
+  top: 2px;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  color: $second-text-color;
+  letter-spacing: 0.01em;
+  font-size: 14px;
+  line-height: 1.14;
+  margin-top: 12px;
+}
+
+.textarea:focus + .label-name {
+  transform: translate(-10px, -30px);
+  -moz-transform: translate(-10px, -40px);
+  -o-transform: translate(-10px, -40px);
+}
+
+.textarea:not(:placeholder-shown) + .label-name {
+  transform: translate(-10px, -30px);
+  -moz-transform: translate(-10px, -40px);
+  -o-transform: translate(10px, -40px);
+
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+  color: $accent-color;
+}
+
+.form-list-item__input:not(:placeholder-shown) + .label-name {
+  transform: translate(-30px, -30px);
+
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+  color: $accent-color;
+}
+
+/* Текст лейба */
+.label-name:not(.textarea-label-name) {
+  position: absolute;
+  left: 42px;
+  top: 2px;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  color: $second-text-color;
+  letter-spacing: 0.01em;
+  font-size: 14px;
+  line-height: 1.14;
+}
+
+.icon {
+  display: inline-block;
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  left: 19px;
+  top: 50%;
+  transform: translate(0, -50%);
+
+  background-size: contain;
+  background-repeat: no-repeat;
+
+  transition: background-image 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  //   иконки в лейблах (можно сделать через else)
+}
+.person-icon {
+  background-image: url(../images/person.svg);
+}
+
+.phone-icon {
+  background-image: url(../images/phone.svg);
+}
+
+.mail-icon {
+  background: url(../images/mail.svg);
+  width: 15px;
+}
+
+.form-list-item__input:focus ~ .person-icon {
+  background-image: url(../images/person-focused.svg);
+}
+
+.form-list-item__input:focus ~ .phone-icon {
+  background-image: url(../images/phone-focused.svg);
+}
+
+.form-list-item__input:focus ~ .mail-icon {
+  background: url(../images/mail-focused.svg);
+  width: 15px;
+}
+
+/* кнопка отправки формы */
+.form-submit-btn {
+  display: block;
+  padding: 10px 55px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+  margin-bottom: 40px;
+
+  font-family: $main-font;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 30px;
+
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border-width: 0px;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    border-color: $white;
+    background: $background-primaty-color;
+    color: $accent-color;
+    cursor: pointer;
+  }
+}
+
+/* кнопка закрытия модалки */
+.close-btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translate(-8px, 8px);
+
+  width: 30px;
+  height: 30px;
+  border: none;
+  border-radius: 50%;
+  background-color: #fff;
+  box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 1px 3px rgba(0, 0, 0, 0.12);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover {
+    cursor: pointer;
+    fill: $accent-color;
+  }
+
+  &:active {
+    background-color: $accent-color;
+    outline: none;
+    border: none;
+  }
+  &:enabled {
+    outline: none;
+    border: none;
+  }
+
+  &-icon {
+    width: 11px;
+    height: 11px;
+    border-radius: 50%;
+  }
+}
+
+// строчка с соглашением
+.agreement-text {
+  display: inline-flex;
+  align-items: center;
+
+  color: $second-text-color;
+
+  font-family: $main-font;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 1.17;
+  // font-size: 14px;
+  // line-height: 1.71;
+  width: 100%;
+  margin-left: 15px;
+
+  @media screen and (min-width: 780px) {
+    font-size: 14px;
+    line-height: 1.71;
+  }
+}
+
+/* ссылка на договор */
+.contract-link {
+  font-family: $main-font;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 1.17;
+
+  letter-spacing: 0.03em;
+  color: $accent-color;
+  margin-left: 5px;
+}
