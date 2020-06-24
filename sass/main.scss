@@ -5,6 +5,7 @@
 @import './utils/breakpoints';
 
 @import './components/common';
+@import './components/section';
 
 // хедер
 @import './components/header';
@@ -29,3 +30,11 @@
 
 // секция клиентов
 @import './components/our-clients-section';
+
+//Портфолио
+@import './components/portfolio-filter-btns';
+@import './components/portfolio';
+
+// футер
+@import './components/footer';
+@import './components/footer-btn';

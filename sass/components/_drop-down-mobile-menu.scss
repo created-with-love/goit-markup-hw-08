@@ -1,9 +1,9 @@
 .menu-container {
+  z-index: 9999;
   @media screen and (max-width: 767px) {
     display: none;
     position: absolute;
     top: 100%;
-    left: 0;
     width: 100%;
     height: 393px;
     text-align: center;
@@ -11,10 +11,15 @@
 
   @media screen and (min-width: 768px) {
     display: flex;
+    justify-content: space-between;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
-    margin-left: 66px;
+    width: 100%;
+    align-items: center;
+  }
+
+  @media screen and(min-width:1200px) {
   }
 
   background-color: $white;
@@ -43,10 +48,7 @@
 
   @media screen and (min-width: 768px) {
     display: flex;
-    &__item {
-      padding-top: 32px;
-      padding-bottom: 32px;
-    }
+    margin-left: 81px;
   }
 
   @media screen and (max-width: 767px) {
@@ -61,12 +63,20 @@
     }
   }
 
+  @media screen and (min-width: 1200px) {
+    margin-left: 65px;
+  }
+
   &__link {
     text-decoration: none;
     color: $primaty-text-color;
 
-    @media screen and (min-width: 780px) {
-      padding: 26px 0px 26px 15px;
+    @media screen and (max-width: 767px) {
+      padding: 8px 0px 8px 0px;
+    }
+
+    @media screen and (min-width: 768px) {
+      padding: 28px 0px 28px 0px;
     }
 
     .site-nav__item:hover &,
@@ -94,18 +104,22 @@
     margin-left: 84px;
   }
 
+  @media screen and (min-width: 768px) {
+    &__item {
+      display: flex;
+      align-items: center;
+    }
+  }
+
   @media screen and (max-width: 767px) {
     &__item {
       padding: 8px;
     }
   }
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
     &__item:not(:last-child) {
       margin-bottom: 10px;
-    }
-    &__item:first-child {
-      margin-top: 21px;
     }
   }
 
@@ -116,8 +130,8 @@
   @media screen and (min-width: 1200px) {
     display: flex;
 
-    &__item {
-      margin-top: 21px;
+    &__item:not(:last-child) {
+      margin-right: 30px;
     }
   }
 }
@@ -125,27 +139,6 @@
 // выбраянная страница
 .site-nav__link--chosen {
   color: $accent-color;
-
-  &::after {
-    position: absolute;
-    content: '';
-    display: block;
-    background-color: $accent-color;
-    background-position: bottom;
-    border-radius: 2px;
-
-    width: 61px;
-    height: 4px;
-    left: 0;
-    bottom: 0;
-
-    left: 20%;
-    bottom: 0%;
-
-    @media screen and (max-width: 767px) {
-      left: 50%;
-      transform: translate(-50%, 0);
-      bottom: -8px;
-    }
-  }
+  border-bottom: 4px solid $accent-color;
+  border-radius: 2px;
 }

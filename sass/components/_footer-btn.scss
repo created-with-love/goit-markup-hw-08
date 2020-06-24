@@ -1,0 +1,46 @@
+.footer-button {
+  padding-left: 29px;
+  padding-right: 28px;
+
+  display: inline-flex;
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+  font-family: $main-font;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.88;
+  text-decoration: none;
+  letter-spacing: 0.06em;
+  border: 1px solid $accent-color;
+  border-radius: 4px;
+  color: $white;
+  background: $accent-color;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    border: 1px solid $accent-color;
+    background: $footer-background;
+    color: $accent-color;
+    cursor: pointer;
+  }
+
+  .subscribe-icon {
+    display: inline-flex;
+    width: 24px;
+    height: 24px;
+    margin-left: 10px;
+    fill: currentColor;
+  }
+
+  @media screen and (max-width: 1199px) {
+    margin-top: 20px;
+    margin-bottom: 60px;
+  }
+}

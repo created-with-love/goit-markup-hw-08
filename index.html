@@ -13,68 +13,73 @@
   <body>
     <!--Шапка сайта-->
     <header>
-      <nav class="header-nav">
-        <a href="./index.html" class="header-nav__logo">
-          <span class="header-nav__logo-web">Web</span
-          ><span class="header-nav__logo-studio"> Studio</span>
-        </a>
+      <div class="container">
+        <nav class="header-nav">
+          <a href="./index.html" class="header-nav__logo">
+            <span class="header-nav__logo-web">Web</span
+            ><span class="header-nav__logo-studio"> Studio</span>
+          </a>
 
-        <div class="menu-container" data-menu>
-          <ul class="site-nav">
-            <li class="site-nav__item">
-              <a
-                href="./index.html"
-                class="site-nav__link site-nav__link--chosen"
-                >Студия</a
-              >
-            </li>
-            <li class="site-nav__item">
-              <a href="./portfolio.html" class="site-nav__link">Портфолио</a>
-            </li>
-            <li class="site-nav__item">
-              <a href="" class="site-nav__link">Контакты</a>
-            </li>
-          </ul>
+          <div class="menu-container" data-menu>
+            <ul class="site-nav">
+              <li class="site-nav__item">
+                <a
+                  href="./index.html"
+                  class="site-nav__link site-nav__link--chosen"
+                  >Студия</a
+                >
+              </li>
+              <li class="site-nav__item">
+                <a href="./portfolio.html" class="site-nav__link">Портфолио</a>
+              </li>
+              <li class="site-nav__item">
+                <a href="" class="site-nav__link">Контакты</a>
+              </li>
+            </ul>
 
-          <ul class="contacts">
-            <li class="contacts__item">
-              <a href="mailto:info@devstudio.com" class="contacts__link">
-                <svg class="contacts__letter-logo" width="16px" height="11px">
-                  <use href="./images/symbol-defs.svg#icon-letter"></use>
-                </svg>
+            <ul class="contacts">
+              <li class="contacts__item">
+                <a href="mailto:info@devstudio.com" class="contacts__link">
+                  <svg class="contacts__letter-logo" width="16px" height="11px">
+                    <use href="./images/symbol-defs.svg#icon-letter"></use>
+                  </svg>
 
-                <span class="contacts__text">info@devstudio.com</span></a
-              >
-            </li>
+                  <span class="contacts__text">info@devstudio.com</span></a
+                >
+              </li>
 
-            <li class="contacts__item">
-              <a href="tel:+380961111111" class="contacts__link">
-                <svg class="contacts__phone-logo" width="10px" height="15px">
-                  <use href="./images/symbol-defs.svg#icon-phone"></use>
-                </svg>
-                <span class="contacts__text">+38 096 111 11 11</span></a
-              >
-            </li>
-          </ul>
-        </div>
+              <li class="contacts__item">
+                <a href="tel:+380961111111" class="contacts__link">
+                  <svg class="contacts__phone-logo" width="10px" height="15px">
+                    <use href="./images/symbol-defs.svg#icon-phone"></use>
+                  </svg>
+                  <span class="contacts__text">+38 096 111 11 11</span></a
+                >
+              </li>
+            </ul>
+          </div>
 
-        <button
-          type="button"
-          class="menu-button"
-          aria-expanded="false"
-          aria-controls="menu-container"
-          data-menu-button
-        >
-          <svg
-            width="40"
-            height="40"
-            aria-label="Переключатель мобильного меню"
+          <button
+            type="button"
+            class="menu-button"
+            aria-expanded="false"
+            aria-controls="menu-container"
+            data-menu-button
           >
-            <use class="icon-cross" href="./images/symbol-defs.svg#cross"></use>
-            <use class="icon-menu" href="./images/symbol-defs.svg#menu"></use>
-          </svg>
-        </button>
-      </nav>
+            <svg
+              width="40"
+              height="40"
+              aria-label="Переключатель мобильного меню"
+            >
+              <use
+                class="icon-cross"
+                href="./images/symbol-defs.svg#cross"
+              ></use>
+              <use class="icon-menu" href="./images/symbol-defs.svg#menu"></use>
+            </svg>
+          </button>
+        </nav>
+      </div>
     </header>
     <main class="page">
       <!-- Herou -->
@@ -471,7 +476,7 @@
             </ul>
           </div>
 
-          <div class="footer-boxes-item">
+          <div class="footer-boxes-item footer-boxes-item--last">
             <b class="footer-action-request">Подпишитесь на рассылку</b>
             <div class="subscribe-form">
               <label class="subscribe-form__label">
