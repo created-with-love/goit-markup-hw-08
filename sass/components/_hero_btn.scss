@@ -17,6 +17,8 @@
   transition: color 250ms $main-transition, background 250ms $main-transition,
     baxo-shadow 250ms $main-transition, border-color 250ms $main-transition;
 
+  animation: pulsing 2s infinite;
+
   &:hover,
   &:focus {
     border-color: $white;

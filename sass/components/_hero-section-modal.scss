@@ -178,38 +178,20 @@ textarea:focus + .label-name {
   }
 }
 
-// строчка с соглашением
-.agreement-text {
-  display: inline-flex;
-  align-items: center;
-
-  color: $second-text-color;
-
-  font-family: $main-font;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 12px;
-  line-height: 1.17;
-  // font-size: 14px;
-  // line-height: 1.71;
-  width: 100%;
-  margin-left: 15px;
-
-  @media screen and (min-width: 780px) {
-    font-size: 14px;
-    line-height: 1.71;
-  }
-}
-
 /* ссылка на договор */
 .contract-link {
   font-family: $main-font;
   font-style: normal;
   font-weight: normal;
   font-size: 12px;
-  line-height: 1.17;
+  line-height: 1.16;
 
   letter-spacing: 0.03em;
   color: $accent-color;
   margin-left: 5px;
+
+  @media screen and (max-width: 479px) {
+    font-size: 10px;
+    line-height: 1.16;
+  }
 }

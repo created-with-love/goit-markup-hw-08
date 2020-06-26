@@ -1,9 +1,25 @@
+// строчка с соглашением
+
 .agreement-text {
   display: inline-flex;
+  font-family: $main-font;
   align-items: center;
+  font-style: normal;
+  font-weight: normal;
   color: $second-text-color;
-  font-size: 14px;
-  line-height: 1.71;
+  width: 100%;
+  font-size: 12px;
+  line-height: 1.16;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: 1.71;
+  }
+
+  @media screen and (max-width: 479px) {
+    font-size: 10px;
+    line-height: 1.16;
+  }
 
   &__checkbox {
     position: absolute;
@@ -23,6 +39,12 @@
     margin-right: 8px;
     transition: background-image 250ms cubic-bezier(0.4, 0, 0.2, 1),
       background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    @media screen and (max-width: 479px) {
+      margin-right: 3px;
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
 
     .agreement-text__checkbox:focus + & {
       background-image: unset;
