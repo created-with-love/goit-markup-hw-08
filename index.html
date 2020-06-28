@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="Description" content="Сайт веб-студии" />
     <title>Web Studio v.1</title>
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700&display=swap"
@@ -16,7 +17,11 @@
     <header>
       <div class="container">
         <nav class="header-nav">
-          <a href="./index.html" class="header-nav__logo">
+          <a
+            href="./index.html"
+            class="header-nav__logo"
+            aria-label="link to the main page via logo"
+          >
             <span class="header-nav__logo-web">Web</span
             ><span class="header-nav__logo-studio"> Studio</span>
           </a>
@@ -27,20 +32,35 @@
                 <a
                   href="./index.html"
                   class="site-nav__link site-nav__link--chosen"
+                  aria-label="link to the studio page"
                   >Студия</a
                 >
               </li>
               <li class="site-nav__item">
-                <a href="./portfolio.html" class="site-nav__link">Портфолио</a>
+                <a
+                  href="./portfolio.html"
+                  class="site-nav__link"
+                  aria-label="link to the portfolio page"
+                  >Портфолио</a
+                >
               </li>
               <li class="site-nav__item">
-                <a href="" class="site-nav__link">Контакты</a>
+                <a
+                  href=""
+                  class="site-nav__link"
+                  aria-label="link to the contacts page"
+                  >Контакты</a
+                >
               </li>
             </ul>
 
             <ul class="contacts">
               <li class="contacts__item">
-                <a href="mailto:info@devstudio.com" class="contacts__link">
+                <a
+                  href="mailto:info@devstudio.com"
+                  class="contacts__link"
+                  aria-label="contact email link"
+                >
                   <svg class="contacts__letter-logo" width="16px" height="11px">
                     <use href="./images/symbol-defs.svg#icon-letter"></use>
                   </svg>
@@ -50,7 +70,11 @@
               </li>
 
               <li class="contacts__item">
-                <a href="tel:+380961111111" class="contacts__link">
+                <a
+                  href="tel:+380961111111"
+                  class="contacts__link"
+                  aria-label="contact phone number"
+                >
                   <svg class="contacts__phone-logo" width="10px" height="15px">
                     <use href="./images/symbol-defs.svg#icon-phone"></use>
                   </svg>
@@ -89,7 +113,11 @@
             Эффективные решения <br />
             для вашего бизнеса
           </h1>
-          <button class="hero-section__button" data-open-modal>
+          <button
+            class="hero-section__button"
+            aria-label="Order studio service"
+            data-open-modal
+          >
             Заказать услугу
           </button>
         </div>
@@ -479,28 +507,44 @@
         <h2 class="section-heading">Постоянные клиенты</h2>
         <ul class="clients-box">
           <li class="client-box-item">
-            <a href="" class="client-link ya-co-client-href">
+            <a
+              href=""
+              class="client-link ya-co-client-href"
+              aria-label="link to the  our client website"
+            >
               <svg class="client-link-logo ya-co-logo">
                 <use href="./images/symbol-defs.svg#icon-ya-co-logo"></use>
               </svg>
             </a>
           </li>
           <li class="client-box-item">
-            <a href="" class="client-link tagline-client-href">
+            <a
+              href=""
+              class="client-link tagline-client-href"
+              aria-label="link to the  our client website"
+            >
               <svg class="client-link-logo tagline-logo">
                 <use href="./images/symbol-defs.svg#icon-tagline-company"></use>
               </svg>
             </a>
           </li>
           <li class="client-box-item">
-            <a href="" class="client-link unnamed-client-href">
+            <a
+              href=""
+              class="client-link unnamed-client-href"
+              aria-label="link to the  our client website"
+            >
               <svg class="client-link-logo unnamed-logo">
                 <use href="./images/symbol-defs.svg#icon-unnamed-company"></use>
               </svg>
             </a>
           </li>
           <li class="client-box-item">
-            <a href="" class="client-link foster-client-href">
+            <a
+              href=""
+              class="client-link foster-client-href"
+              aria-label="link to the  our client website"
+            >
               <svg class="client-link-logo foster-logo">
                 <use
                   href="./images/symbol-defs.svg#icon-foster-peters-logo"
@@ -509,14 +553,22 @@
             </a>
           </li>
           <li class="client-box-item">
-            <a href="" class="client-link brand-client-href">
+            <a
+              href=""
+              class="client-link brand-client-href"
+              aria-label="link to the  our client website"
+            >
               <svg class="client-link-logo brand-logo">
                 <use href="./images/symbol-defs.svg#icon-brand-logo"></use>
               </svg>
             </a>
           </li>
           <li class="client-box-item">
-            <a href="" class="client-link rag-line-client-href">
+            <a
+              href=""
+              class="client-link rag-line-client-href"
+              aria-label="link to the  our client website"
+            >
               <svg class="client-link-logo rag-line-logo">
                 <use href="./images/symbol-defs.svg#icon-rag-line-logo"></use>
               </svg>
@@ -532,18 +584,30 @@
         <h2 class="hidden">Наши контакты и социальные сети</h2>
         <div class="footer-boxes">
           <div class="footer-boxes-item">
-            <a href="./index.html" class="footer-logo">
+            <a
+              href="./index.html"
+              class="footer-logo"
+              aria-label="link to the main page via logo"
+            >
               <span class="footer-logo-web">Web</span
               ><span class="footer-logo-studio"> Studio</span>
             </a>
 
             <address class="address">
               г.Киев, пр-т Леси Украинки, 26<br />
-              <a href="mailto:info@example.com" class="footer-contacts"
+              <a
+                href="mailto:info@example.com"
+                class="footer-contacts"
+                aria-label="our email link"
+              >
                 >info@example.com</a
               >
               <br />
-              <a href="tel:+380991111111" class="footer-contacts"
+              <a
+                href="tel:+380991111111"
+                class="footer-contacts"
+                aria-label="our phone link"
+              >
                 >+38 099 111 11 11</a
               >
             </address>
@@ -618,7 +682,10 @@
                   placeholder="E-mail"
                 />
               </label>
-              <button class="footer-button">
+              <button
+                class="footer-button"
+                aria-label="Subscribe in telegramm channel"
+              >
                 <span class="footer-btn-text">Подписаться</span>
                 <svg class="subscribe-icon">
                   <use href="./images/symbol-defs.svg#icon-logo-send"></use>
@@ -703,11 +770,21 @@
             <a href="" class="contract-link"> Условия договора</a>
           </label>
 
-          <button type="submit" class="button form-submit-btn">
+          <button
+            type="submit"
+            class="button form-submit-btn"
+            aria-label="Submit the inputed form"
+          >
             Отправить
           </button>
         </form>
-        <button data-close-modal class="close-btn">
+        <button
+          type="button"
+          data-close-modal
+          class="close-btn"
+          aria-label="Close menu modal"
+        >
+          >
           <svg class="close-btn-icon">
             <use href="./images/symbol-defs.svg#icon-close"></use>
           </svg>
