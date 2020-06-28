@@ -4,7 +4,7 @@
   max-width: 480px;
 
   @media screen and (min-width: $tablet) {
-    max-width: 780px;
+    max-width: 768px;
 
     &-box {
       display: flex;
@@ -14,7 +14,7 @@
   }
 
   @media screen and (min-width: 1200px) {
-    min-width: 1200px;
+    max-width: 1200px;
   }
 }
 
@@ -38,13 +38,15 @@
   border-radius: 4px;
 
   @media screen and (min-width: 768px) {
-    width: calc((100% - 60px) / 2);
+    flex-basis: calc((100% - 30px) / 2);
   }
   @media screen and (min-width: 1200px) {
-    width: calc((100% - 90px) / 4);
+    flex-basis: calc((100% - 90px) / 4);
   }
 
   @media screen and (max-width: 767px) {
+    flex-basis: 450px;
+
     &:not(:last-child) {
       margin-bottom: 30px;
     }

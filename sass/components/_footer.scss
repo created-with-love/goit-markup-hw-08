@@ -133,6 +133,7 @@
 .address-list-item:not(:last-child) {
   margin-right: 10px;
 }
+
 .social-link {
   display: inline-flex;
   width: 44px;
@@ -147,6 +148,7 @@
   justify-content: center;
 
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  animation: pulsing 2s infinite;
 
   &:hover,
   &:focus {

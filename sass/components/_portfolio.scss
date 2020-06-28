@@ -21,6 +21,7 @@
 
   .product-item {
     text-decoration: none;
+    outline: none;
   }
 }
 
@@ -90,6 +91,11 @@
   .list-of-products-item:focus & {
     opacity: 1;
     transform: translateY(0);
+  }
+
+  .product-item {
+    text-decoration: none;
+    outline: none;
   }
 }
 

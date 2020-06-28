@@ -3,6 +3,8 @@
 @import './base/nullifier';
 @import './utils/placeholders';
 @import './utils/breakpoints';
+// анимации
+@import './utils/animations';
 
 @import './components/common';
 @import './components/section';
@@ -38,6 +40,3 @@
 // футер
 @import './components/footer';
 @import './components/footer-btn';
-
-// анимации
-@import './utils/animations';
