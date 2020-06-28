@@ -66,7 +66,6 @@
             type="button"
             class="menu-button"
             aria-expanded="false"
-            aria-controls="menu-container"
             data-menu-button
           >
             <svg
@@ -110,12 +109,40 @@
           <li class="list-of-products-item">
             <a href="" class="product-item">
               <div class="product-item__thumb">
-                <img
-                  src="./images/portfolio-img/portfolio-notpad-img.jpg"
-                  alt="teammember on monitor screen"
-                  width="370"
-                  height="294"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/portfolio-img/notepad/notepad-370.jpg  1x,
+                      ./images/portfolio-img/notepad/notepad-740.jpg  2x,
+                      ./images/portfolio-img/notepad/notepad-1110.jpg 3x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+
+                  <source
+                    srcset="
+                      ./images/portfolio-img/notepad/notepad-354.jpg  1x,
+                      ./images/portfolio-img/notepad/notepad-708.jpg  2x,
+                      ./images/portfolio-img/notepad/notepad-1062.jpg 3x
+                    "
+                    media="(min-width: 768px)"
+                  />
+
+                  <source
+                    srcset="
+                      ./images/portfolio-img/notepad/notepad-450.jpg  1x,
+                      ./images/portfolio-img/notepad/notepad-900.jpg  2x,
+                      ./images/portfolio-img/notepad/notepad-1350.jpg 3x
+                    "
+                    media="(max-width: 767px)"
+                  />
+
+                  <img
+                    src="./images/portfolio-img/notepad/notepad-450.jpg"
+                    alt="teammember on monitor screen"
+                    sizes="(min-width: 768px) 50vw, (min-width: 1200px) 33vw, 100vw"
+                  />
+                </picture>
                 <div class="product-item-description is-hidden">
                   Технокряк это современная площадка распространения
                   коронавируса. Компании используют эту платформу для цифрового
@@ -130,12 +157,40 @@
           <li class="list-of-products-item">
             <a href="" class="product-item">
               <div class="product-item__thumb">
-                <img
-                  src="./images/portfolio-img/nba-players-img.jpg"
-                  alt="two basketball players"
-                  width="370"
-                  height="294"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/portfolio-img/nba/nba-370.jpg  1x,
+                      ./images/portfolio-img/nba/nba-740.jpg  2x,
+                      ./images/portfolio-img/nba/nba-1110.jpg 3x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+
+                  <source
+                    srcset="
+                      ./images/portfolio-img/nba/nba-354.jpg  1x,
+                      ./images/portfolio-img/nba/nba-708.jpg  2x,
+                      ./images/portfolio-img/nba/nba-1062.jpg 3x
+                    "
+                    media="(min-width: 768px)"
+                  />
+
+                  <source
+                    srcset="
+                      ./images/portfolio-img/nba/nba-450.jpg  1x,
+                      ./images/portfolio-img/nba/nba-900.jpg  2x,
+                      ./images/portfolio-img/nba/nba-1350.jpg 3x
+                    "
+                    media="(max-width: 767px)"
+                  />
+
+                  <img
+                    src="./images/portfolio-img/nba/nba-450.jpg"
+                    alt="teammember on monitor screen"
+                    sizes="(min-width: 768px) 50vw, (min-width: 1200px) 33vw, 100vw"
+                  />
+                </picture>
                 <div class="product-item-description">
                   Технокряк это современная площадка распространения
                   коронавируса. Компании используют эту платформу для цифрового
@@ -150,12 +205,40 @@
           <li class="list-of-products-item">
             <a href="" class="product-item">
               <div class="product-item__thumb">
-                <img
-                  src="./images/portfolio-img/seafood-img.jpg"
-                  alt="seafood logo image"
-                  width="370"
-                  height="294"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/portfolio-img/seafood/seafood-370.jpg  1x,
+                      ./images/portfolio-img/seafood/seafood-740.jpg  2x,
+                      ./images/portfolio-img/seafood/seafood-1110.jpg 3x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+
+                  <source
+                    srcset="
+                      ./images/portfolio-img/seafood/seafood-354.jpg  1x,
+                      ./images/portfolio-img/seafood/seafood-708.jpg  2x,
+                      ./images/portfolio-img/seafood/seafood-1062.jpg 3x
+                    "
+                    media="(min-width: 768px)"
+                  />
+
+                  <source
+                    srcset="
+                      ./images/portfolio-img/seafood/seafood-450.jpg  1x,
+                      ./images/portfolio-img/seafood/seafood-900.jpg  2x,
+                      ./images/portfolio-img/seafood/seafood-1350.jpg 3x
+                    "
+                    media="(max-width: 767px)"
+                  />
+
+                  <img
+                    src="./images/portfolio-img/seafood/seafood-450.jpg"
+                    alt="teammember on monitor screen"
+                    sizes="(min-width: 768px) 50vw, (min-width: 1200px) 33vw, 100vw"
+                  />
+                </picture>
                 <div class="product-item-description">
                   Технокряк это современная площадка распространения
                   коронавируса. Компании используют эту платформу для цифрового
@@ -170,12 +253,40 @@
           <li class="list-of-products-item">
             <a href="" class="product-item">
               <div class="product-item__thumb">
-                <img
-                  src="./images/portfolio-img/headers-img.jpg"
-                  alt="headers"
-                  width="370"
-                  height="294"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/portfolio-img/headers/headers-370.jpg  1x,
+                      ./images/portfolio-img/headers/headers-740.jpg  2x,
+                      ./images/portfolio-img/headers/headers-1110.jpg 3x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+
+                  <source
+                    srcset="
+                      ./images/portfolio-img/headers/headers-354.jpg  1x,
+                      ./images/portfolio-img/headers/headers-708.jpg  2x,
+                      ./images/portfolio-img/headers/headers-1062.jpg 3x
+                    "
+                    media="(min-width: 768px)"
+                  />
+
+                  <source
+                    srcset="
+                      ./images/portfolio-img/headers/headers-450.jpg  1x,
+                      ./images/portfolio-img/headers/headers-900.jpg  2x,
+                      ./images/portfolio-img/headers/headers-1350.jpg 3x
+                    "
+                    media="(max-width: 767px)"
+                  />
+
+                  <img
+                    src="./images/portfolio-img/headers/headers-450.jpg"
+                    alt="teammember on monitor screen"
+                    sizes="(min-width: 768px) 50vw, (min-width: 1200px) 33vw, 100vw"
+                  />
+                </picture>
                 <div class="product-item-description">
                   Технокряк это современная площадка распространения
                   коронавируса. Компании используют эту платформу для цифрового
@@ -190,12 +301,40 @@
           <li class="list-of-products-item">
             <a href="" class="product-item">
               <div class="product-item__thumb">
-                <img
-                  src="./images/portfolio-img/two-boxes-img.jpg"
-                  alt="two boxes"
-                  width="370"
-                  height="294"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/portfolio-img/boxes/boxes-370.jpg  1x,
+                      ./images/portfolio-img/boxes/boxes-740.jpg  2x,
+                      ./images/portfolio-img/boxes/boxes-1110.jpg 3x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+
+                  <source
+                    srcset="
+                      ./images/portfolio-img/boxes/boxes-354.jpg  1x,
+                      ./images/portfolio-img/boxes/boxes-708.jpg  2x,
+                      ./images/portfolio-img/boxes/boxes-1062.jpg 3x
+                    "
+                    media="(min-width: 768px)"
+                  />
+
+                  <source
+                    srcset="
+                      ./images/portfolio-img/boxes/boxes-450.jpg  1x,
+                      ./images/portfolio-img/boxes/boxes-900.jpg  2x,
+                      ./images/portfolio-img/boxes/boxes-1350.jpg 3x
+                    "
+                    media="(max-width: 767px)"
+                  />
+
+                  <img
+                    src="./images/portfolio-img/boxes/boxes-450.jpg"
+                    alt="teammember on monitor screen"
+                    sizes="(min-width: 768px) 50vw, (min-width: 1200px) 33vw, 100vw"
+                  />
+                </picture>
                 <div class="product-item-description">
                   Технокряк это современная площадка распространения
                   коронавируса. Компании используют эту платформу для цифрового
@@ -210,12 +349,40 @@
           <li class="list-of-products-item">
             <a href="" class="product-item">
               <div class="product-item__thumb">
-                <img
-                  src="./images/portfolio-img/inspiration-screen-img.jpg"
-                  alt="monitor screen with inspiration website"
-                  width="370"
-                  height="294"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/portfolio-img/inspiration/inspiration-370.jpg  1x,
+                      ./images/portfolio-img/inspiration/inspiration-740.jpg  2x,
+                      ./images/portfolio-img/inspiration/inspiration-1110.jpg 3x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+
+                  <source
+                    srcset="
+                      ./images/portfolio-img/inspiration/inspiration-354.jpg  1x,
+                      ./images/portfolio-img/inspiration/inspiration-708.jpg  2x,
+                      ./images/portfolio-img/inspiration/inspiration-1062.jpg 3x
+                    "
+                    media="(min-width: 768px)"
+                  />
+
+                  <source
+                    srcset="
+                      ./images/portfolio-img/inspiration/inspiration-450.jpg  1x,
+                      ./images/portfolio-img/inspiration/inspiration-900.jpg  2x,
+                      ./images/portfolio-img/inspiration/inspiration-1350.jpg 3x
+                    "
+                    media="(max-width: 767px)"
+                  />
+
+                  <img
+                    src="./images/portfolio-img/inspiration/inspiration-450.jpg"
+                    alt="teammember on monitor screen"
+                    sizes="(min-width: 768px) 50vw, (min-width: 1200px) 33vw, 100vw"
+                  />
+                </picture>
                 <div class="product-item-description">
                   Технокряк это современная площадка распространения
                   коронавируса. Компании используют эту платформу для цифрового
@@ -230,12 +397,40 @@
           <li class="list-of-products-item">
             <a href="" class="product-item">
               <div class="product-item__thumb">
-                <img
-                  src="./images/portfolio-img/limited-edition-img.jpg"
-                  alt="open book"
-                  width="370"
-                  height="294"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/portfolio-img/book/book-370.jpg  1x,
+                      ./images/portfolio-img/book/book-740.jpg  2x,
+                      ./images/portfolio-img/book/book-1110.jpg 3x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+
+                  <source
+                    srcset="
+                      ./images/portfolio-img/book/book-354.jpg  1x,
+                      ./images/portfolio-img/book/book-708.jpg  2x,
+                      ./images/portfolio-img/book/book-1062.jpg 3x
+                    "
+                    media="(min-width: 768px)"
+                  />
+
+                  <source
+                    srcset="
+                      ./images/portfolio-img/book/book-450.jpg  1x,
+                      ./images/portfolio-img/book/book-900.jpg  2x,
+                      ./images/portfolio-img/book/book-1350.jpg 3x
+                    "
+                    media="(max-width: 767px)"
+                  />
+
+                  <img
+                    src="./images/portfolio-img/book/book-450.jpg"
+                    alt="teammember on monitor screen"
+                    sizes="(min-width: 768px) 50vw, (min-width: 1200px) 33vw, 100vw"
+                  />
+                </picture>
                 <div class="product-item-description">
                   Технокряк это современная площадка распространения
                   коронавируса. Компании используют эту платформу для цифрового
@@ -250,12 +445,40 @@
           <li class="list-of-products-item">
             <a href="" class="product-item">
               <div class="product-item__thumb">
-                <img
-                  src="./images/portfolio-img/lab-img.jpg"
-                  alt="LAB project label"
-                  width="370"
-                  height="294"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/portfolio-img/lab/lab-370.jpg  1x,
+                      ./images/portfolio-img/lab/lab-740.jpg  2x,
+                      ./images/portfolio-img/lab/lab-1110.jpg 3x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+
+                  <source
+                    srcset="
+                      ./images/portfolio-img/lab/lab-354.jpg  1x,
+                      ./images/portfolio-img/lab/lab-708.jpg  2x,
+                      ./images/portfolio-img/lab/lab-1062.jpg 3x
+                    "
+                    media="(min-width: 768px)"
+                  />
+
+                  <source
+                    srcset="
+                      ./images/portfolio-img/lab/lab-450.jpg  1x,
+                      ./images/portfolio-img/lab/lab-900.jpg  2x,
+                      ./images/portfolio-img/lab/lab-1350.jpg 3x
+                    "
+                    media="(max-width: 767px)"
+                  />
+
+                  <img
+                    src="./images/portfolio-img/lab/lab-450.jpg"
+                    alt="teammember on monitor screen"
+                    sizes="(min-width: 768px) 50vw, (min-width: 1200px) 33vw, 100vw"
+                  />
+                </picture>
                 <div class="product-item-description">
                   Технокряк это современная площадка распространения
                   коронавируса. Компании используют эту платформу для цифрового
@@ -270,12 +493,40 @@
           <li class="list-of-products-item">
             <a href="" class="product-item">
               <div class="product-item__thumb">
-                <img
-                  src="./images/portfolio-img/growing-bus-img.jpg"
-                  alt="app for growing Business"
-                  width="370"
-                  height="294"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/portfolio-img/laptop/laptop-370.jpg  1x,
+                      ./images/portfolio-img/laptop/laptop-740.jpg  2x,
+                      ./images/portfolio-img/laptop/laptop-1110.jpg 3x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+
+                  <source
+                    srcset="
+                      ./images/portfolio-img/laptop/laptop-354.jpg  1x,
+                      ./images/portfolio-img/laptop/laptop-708.jpg  2x,
+                      ./images/portfolio-img/laptop/laptop-1062.jpg 3x
+                    "
+                    media="(min-width: 768px)"
+                  />
+
+                  <source
+                    srcset="
+                      ./images/portfolio-img/laptop/laptop-450.jpg  1x,
+                      ./images/portfolio-img/laptop/laptop-900.jpg  2x,
+                      ./images/portfolio-img/laptop/laptop-1350.jpg 3x
+                    "
+                    media="(max-width: 767px)"
+                  />
+
+                  <img
+                    src="./images/portfolio-img/laptop/laptop-450.jpg"
+                    alt="teammember on monitor screen"
+                    sizes="(min-width: 768px) 50vw, (min-width: 1200px) 33vw, 100vw"
+                  />
+                </picture>
                 <div class="product-item-description">
                   Технокряк это современная площадка распространения
                   коронавируса. Компании используют эту платформу для цифрового

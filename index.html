@@ -155,45 +155,45 @@
           <li class="worklist-item">
             <img
               srcset="
-                ./images/What-we-r-d/pc-user/img.jpg    1x,
-                ./images/What-we-r-d/pc-user/img@2x.jpg 2x,
-                ./images/What-we-r-d/pc-user/img@3x.jpg 3x,
+                ./images/What-we-r-d/pc-user/img.jpg     370w,
+                ./images/What-we-r-d/pc-user/img@2x.jpg  740w,
+                ./images/What-we-r-d/pc-user/img@3x.jpg 1110w,
 
               "
               src="./images/What-we-r-d/pc-user/img.jpg"
               alt="пользователь за ноутбуком"
-              width="370"
               class="our-work-img"
+              sizes="370px"
             />
             <h3 class="our-work-heading first">Десктопные приложения</h3>
           </li>
           <li class="worklist-item">
             <img
               srcset="
-                ./images/What-we-r-d/smartphone/box.jpg    1x,
-                ./images/What-we-r-d/smartphone/box@2x.jpg 2x,
-                ./images/What-we-r-d/smartphone/box@3x.jpg 3x,
+                ./images/What-we-r-d/smartphone/box.jpg     370w,
+                ./images/What-we-r-d/smartphone/box@2x.jpg  740w,
+                ./images/What-we-r-d/smartphone/box@3x.jpg 1110w,
 
               "
               src="./images/What-we-r-d/smartphone/box.jpg"
               alt="смартфон"
-              width="370"
               class="our-work-img"
+              sizes="370px"
             />
             <h3 class="our-work-heading second">Мобильные приложения</h3>
           </li>
           <li class="worklist-item">
             <img
               srcset="
-                ./images/What-we-r-d/monitor-screen/m-screen.jpg    1x,
-                ./images/What-we-r-d/monitor-screen/m-screen@2x.jpg 2x,
-                ./images/What-we-r-d/monitor-screen/m-screen@3x.jpg 3x,
+                ./images/What-we-r-d/monitor-screen/m-screen.jpg     370w,
+                ./images/What-we-r-d/monitor-screen/m-screen@2x.jpg  740w,
+                ./images/What-we-r-d/monitor-screen/m-screen@3x.jpg 1110w,
 
               "
               src="./images/What-we-r-d/monitor-screen/m-screen.jpg"
               alt="экран компьютера"
-              width="370"
               class="our-work-img"
+              sizes="370px"
             />
             <h3 class="our-work-heading third">Дизайнерские решения</h3>
           </li>
@@ -205,6 +205,14 @@
         <ul class="team-section-box">
           <li class="team-section-box__item">
             <picture>
+              <source
+                srcset="
+                  ./images/our-team/Nikolay/nikolay-270.jpg 1x,
+                  ./images/our-team/Nikolay/nikolay-540.jpg 2x,
+                  ./images/our-team/Nikolay/nikolay-810.jpg 3x
+                "
+                media="(min-width: 1200px)"
+              />
               <source
                 srcset="
                   ./images/our-team/Nikolay/nikolay-450.jpg  1x,
@@ -221,15 +229,6 @@
                   ./images/our-team/Nikolay/nikolay-1062.jpg 3x
                 "
                 media="(min-width: 768px)"
-              />
-
-              <source
-                srcset="
-                  ./images/our-team/Nikolay/nikolay-270.jpg 1x,
-                  ./images/our-team/Nikolay/nikolay-540.jpg 2x,
-                  ./images/our-team/Nikolay/nikolay-810.jpg 3x
-                "
-                media="(min-width: 1200px)"
               />
 
               <img
@@ -273,24 +272,39 @@
             </ul>
           </li>
           <li class="team-section-box__item">
-            <img
-              srcset="
-                ./images/our-team/Olga/olga-270.jpg   270w,
-                ./images/our-team/Olga/olga-354.jpg   354w,
-                ./images/our-team/Olga/olga-450.jpg   450w,
-                ./images/our-team/Olga/olga-540.jpg   540w,
-                ./images/our-team/Olga/olga-708.jpg   708w,
-                ./images/our-team/Olga/olga-810.jpg   810w,
-                ./images/our-team/Olga/olga-900.jpg   900w,
-                ./images/our-team/Olga/olga-1062.jpg 1062w,
-                ./images/our-team/Olga/olga-1350.jpg 1350w,
+            <picture>
+              <source
+                srcset="
+                  ./images/our-team/Olga/olga-270.jpg 1x,
+                  ./images/our-team/Olga/olga-540.jpg 2x,
+                  ./images/our-team/Olga/olga-810.jpg 3x
+                "
+                media="(min-width: 1200px)"
+              />
+              <source
+                srcset="
+                  ./images/our-team/Olga/olga-450.jpg  1x,
+                  ./images/our-team/Olga/olga-900.jpg  2x,
+                  ./images/our-team/Olga/olga-1350.jpg 3x
+                "
+                media="(max-width: 767px)"
+              />
 
-              "
-              src="./images/our-team/Olga/olga-450.jpg"
-              alt="фото члена команды"
-              sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw,
-               100vw"
-            />
+              <source
+                srcset="
+                  ./images/our-team/Olga/olga-354.jpg  1x,
+                  ./images/our-team/Olga/olga-708.jpg  2x,
+                  ./images/our-team/Olga/olga-1062.jpg 3x
+                "
+                media="(min-width: 768px)"
+              />
+
+              <img
+                src="./images/our-team/Olga/olga-450.jpg"
+                alt="фото члена команды"
+                sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, 100vw"
+              />
+            </picture>
             <h3 class="team-member-name">Ольга Иванова</h3>
             <p class="team-member-position">Frontend Developer</p>
             <ul class="social-links-box">
@@ -325,24 +339,39 @@
             </ul>
           </li>
           <li class="team-section-box__item">
-            <img
-              srcset="
-                ./images/our-team/Andrey/andrey-270.jpg   270w,
-                ./images/our-team/Andrey/andrey-354.jpg   354w,
-                ./images/our-team/Andrey/andrey-450.jpg   450w,
-                ./images/our-team/Andrey/andrey-540.jpg   540w,
-                ./images/our-team/Andrey/andrey-708.jpg   708w,
-                ./images/our-team/Andrey/andrey-810.jpg   810w,
-                ./images/our-team/Andrey/andrey-900.jpg   900w,
-                ./images/our-team/Andrey/andrey-1062.jpg 1062w,
-                ./images/our-team/Andrey/andrey-1350.jpg 1350w,
+            <picture>
+              <source
+                srcset="
+                  ./images/our-team/Andrey/andrey-270.jpg 1x,
+                  ./images/our-team/Andrey/andrey-540.jpg 2x,
+                  ./images/our-team/Andrey/andrey-810.jpg 3x
+                "
+                media="(min-width: 1200px)"
+              />
+              <source
+                srcset="
+                  ./images/our-team/Andrey/andrey-450.jpg  1x,
+                  ./images/our-team/Andrey/andrey-900.jpg  2x,
+                  ./images/our-team/Andrey/andrey-1350.jpg 3x
+                "
+                media="(max-width: 767px)"
+              />
 
-              "
-              src="./images/our-team/Andrey/andrey-450.jpg"
-              alt="фото члена команды"
-              sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw,
-               100vw"
-            />
+              <source
+                srcset="
+                  ./images/our-team/Andrey/andrey-354.jpg  1x,
+                  ./images/our-team/Andrey/andrey-708.jpg  2x,
+                  ./images/our-team/Andrey/andrey-1062.jpg 3x
+                "
+                media="(min-width: 768px)"
+              />
+
+              <img
+                src="./images/our-team/Andrey/andrey-450.jpg"
+                alt="фото члена команды"
+                sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, 100vw"
+              />
+            </picture>
             <h3 class="team-member-name">Андрей Шевченко</h3>
             <p class="team-member-position">Marketing</p>
             <ul class="social-links-box">
@@ -377,24 +406,39 @@
             </ul>
           </li>
           <li class="team-section-box__item">
-            <img
-              srcset="
-                ./images/our-team/Ivan/ivan-270.jpg   270w,
-                ./images/our-team/Ivan/ivan-354.jpg   354w,
-                ./images/our-team/Ivan/ivan-450.jpg   450w,
-                ./images/our-team/Ivan/ivan-540.jpg   540w,
-                ./images/our-team/Ivan/ivan-708.jpg   708w,
-                ./images/our-team/Ivan/ivan-810.jpg   810w,
-                ./images/our-team/Ivan/ivan-900.jpg   900w,
-                ./images/our-team/Ivan/ivan-1062.jpg 1062w,
-                ./images/our-team/Ivan/ivan-1350.jpg 1350w,
+            <picture>
+              <source
+                srcset="
+                  ./images/our-team/Ivan/ivan-270.jpg 1x,
+                  ./images/our-team/Ivan/ivan-540.jpg 2x,
+                  ./images/our-team/Ivan/ivan-810.jpg 3x
+                "
+                media="(min-width: 1200px)"
+              />
+              <source
+                srcset="
+                  ./images/our-team/Ivan/ivan-450.jpg  1x,
+                  ./images/our-team/Ivan/ivan-900.jpg  2x,
+                  ./images/our-team/Ivan/ivan-1350.jpg 3x
+                "
+                media="(max-width: 767px)"
+              />
 
-              "
-              src="./images/our-team/Ivan/ivan-450.jpg"
-              alt="фото члена команды"
-              sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw,
-               100vw"
-            />
+              <source
+                srcset="
+                  ./images/our-team/Ivan/ivan-354.jpg  1x,
+                  ./images/our-team/Ivan/ivan-708.jpg  2x,
+                  ./images/our-team/Ivan/ivan-1062.jpg 3x
+                "
+                media="(min-width: 768px)"
+              />
+
+              <img
+                src="./images/our-team/Ivan/ivan-450.jpg"
+                alt="фото члена команды"
+                sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, 100vw"
+              />
+            </picture>
             <h3 class="team-member-name">Иван Николаев</h3>
             <p class="team-member-position">UI Designer</p>
             <ul class="social-links-box">
