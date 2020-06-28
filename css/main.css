@@ -1560,7 +1560,7 @@ textarea:focus + .label-name {
 
 .team-section {
   background-color: #f5f4fa;
-  margin-bottom: 60px;
+  padding-bottom: 60px;
   max-width: 480px;
 }
 
@@ -1574,13 +1574,13 @@ textarea:focus + .label-name {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    padding-bottom: 94px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .team-section {
     max-width: 1200px;
+    padding-bottom: 94px;
   }
 }
 

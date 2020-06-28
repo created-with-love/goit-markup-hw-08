@@ -1,6 +1,6 @@
 .team-section {
   background-color: $background-second-color;
-  margin-bottom: 60px;
+  padding-bottom: 60px;
   max-width: 480px;
 
   @media screen and (min-width: $tablet) {
@@ -9,12 +9,12 @@
     &-box {
       display: flex;
       flex-wrap: wrap;
-      padding-bottom: 94px;
     }
   }
 
   @media screen and (min-width: 1200px) {
     max-width: 1200px;
+    padding-bottom: 94px;
   }
 }
 
