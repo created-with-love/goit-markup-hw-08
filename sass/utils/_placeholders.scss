@@ -18,3 +18,32 @@
   font-weight: bold;
   letter-spacing: 0.03em;
 }
+
+@mixin bg-image($background-image) {
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.8),
+      rgba(47, 48, 58, 0.8)
+    ),
+    url($background-image);
+}
+
+@mixin bg-img($bg1, $bg2, $bg3) {
+  @include bg-image($bg1);
+
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (-webkit-min-device-pixel-ratio: 2),
+    screen and (-o-min-device-pixel-ratio: 2/1),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    @include bg-image($bg2);
+  }
+
+  @media screen and (min-device-pixel-ratio: 3),
+    screen and (-webkit-min-device-pixel-ratio: 3),
+    screen and (-o-min-device-pixel-ratio: 3/1),
+    screen and (min-resolution: 288dpi),
+    screen and (min-resolution: 3dppx) {
+    @include bg-image($bg3);
+  }
+}

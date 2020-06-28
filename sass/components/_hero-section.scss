@@ -7,31 +7,27 @@
   padding-right: 15px;
 
   @media screen and (max-width: 767px) {
-    background-image: linear-gradient(
-        to right,
-        rgba(47, 48, 58, 0.8),
-        rgba(47, 48, 58, 0.8)
-      ),
-      url(../images/Header-img-mobile.jpg);
+    @include bg-img(
+      '../images/Hero-bcg/hero-480/Header-img.jpg',
+      '../images/Hero-bcg/hero-480/Header-img@2x.jpg',
+      '../images/Hero-bcg/hero-480/Header-img@3x.jpg'
+    );
   }
 
   @media screen and (min-width: 768px) and (max-width: 1199px) {
-    background-image: linear-gradient(
-        to right,
-        rgba(47, 48, 58, 0.8),
-        rgba(47, 48, 58, 0.8)
-      ),
-      url(../images/Header-img-tablet.jpg);
+    @include bg-img(
+      '../images/Hero-bcg/hero-768/Header-img.jpg',
+      '../images/Hero-bcg/hero-768/Header-img@2x.jpg',
+      '../images/Hero-bcg/hero-768/Header-img@3x.jpg'
+    );
   }
 
   @media screen and (min-width: 1200px) {
-    background-image: linear-gradient(
-        to right,
-        rgba(47, 48, 58, 0.8),
-        rgba(47, 48, 58, 0.8)
-      ),
-      url(../images/Header-img.jpg);
-    max-width: 1600px;
+    @include bg-img(
+      '../images/Hero-bcg/hero-1200/Header-img.jpg',
+      '../images/Hero-bcg/hero-1200/Header-img@2x.jpg',
+      '../images/Hero-bcg/hero-1200/Header-img@3x.jpg'
+    );
   }
 
   background-repeat: no-repeat;
