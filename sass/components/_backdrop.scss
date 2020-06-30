@@ -49,13 +49,21 @@
     letter-spacing: 0.03em;
   }
 
-  // @media screen and (max-height: 600px) {
-  //   top: 80%;
-  // }
-
   @media screen and (min-width: 768px) {
     min-width: 528px;
     min-height: 581px;
+  }
+
+  // Доп отспупы для маленьких экранов, что бы окно не уезжало сильно вверх
+  @media screen and (max-height: 600px) {
+    margin-top: 50px;
+  }
+  @media screen and (max-height: 485px) {
+    margin-top: 70px;
+  }
+
+  @media screen and (max-height: 450px) {
+    margin-top: 90px;
   }
 }
 

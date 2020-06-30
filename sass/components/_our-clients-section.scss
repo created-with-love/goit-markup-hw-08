@@ -107,19 +107,72 @@
 
 .ya-co-client-href {
   padding: 20px 63px 21px 63px;
+
+  @media screen and (max-width: 767px) {
+    padding: 20px 83px 21px 83px;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    padding: 20px 91px 21px 91px;
+  }
 }
+
 .tagline-client-href {
   padding: 19px 65px 19px 65px;
+
+  @media screen and (max-width: 767px) {
+    padding: 19px 85px 19px 85px;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    padding: 19px 93px 19px 93px;
+  }
 }
+
 .unnamed-client-href {
   padding: 24px 64px 23px 65px;
+
+  @media screen and (max-width: 767px) {
+    padding: 24px 84px 23px 85px;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    padding: 24px 93px 23px 92px;
+  }
 }
+
 .foster-client-href {
   padding: 24px 45px 24px 45px;
+
+  @media screen and (max-width: 767px) {
+    padding: 24px 65px 24px 65px;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    padding: 24px 73px 24px 73px;
+  }
 }
+
 .brand-client-href {
   padding: 22px 55px 21px 56px;
+
+  @media screen and (max-width: 767px) {
+    padding: 22px 75px 21px 76px;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    padding: 22px 84px 21px 83px;
+  }
 }
+
 .rag-line-client-href {
   padding: 22px 41px 23px 41px;
+
+  @media screen and (max-width: 767px) {
+    padding: 22px 61px 23px 61px;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    padding: 22px 84px 23px 69px;
+  }
 }
