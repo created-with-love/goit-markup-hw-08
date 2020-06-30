@@ -8,17 +8,14 @@
   flex-wrap: wrap;
   padding-bottom: 94px;
   justify-content: space-between;
+  color: #afb1b8;
 
   & > .client-box-item {
-    border: 1px solid #afb1b8;
+    border: 1px solid currentColor;
     border-radius: 4px;
     width: 210px;
 
     transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-    & .client-link:hover {
-      border-color: $accent-color;
-    }
 
     @media screen and (max-width: 450px) {
       &:not(:last-child) {
@@ -56,6 +53,10 @@
       width: calc((100% - 150px) / 6);
     }
   }
+}
+
+.client-box-item:hover {
+  color: $accent-color;
 }
 /* Коробочки для логотипов наших клиентов */
 

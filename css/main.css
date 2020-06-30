@@ -1734,18 +1734,15 @@ textarea:focus + .label-name {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  color: #afb1b8;
 }
 
 .clients-box > .client-box-item {
-  border: 1px solid #afb1b8;
+  border: 1px solid currentColor;
   border-radius: 4px;
   width: 210px;
   -webkit-transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.clients-box > .client-box-item .client-link:hover {
-  border-color: #2196f3;
 }
 
 @media screen and (max-width: 450px) {
@@ -1788,6 +1785,10 @@ textarea:focus + .label-name {
   .clients-box > .client-box-item {
     width: calc((100% - 150px) / 6);
   }
+}
+
+.client-box-item:hover {
+  color: #2196f3;
 }
 
 /* Коробочки для логотипов наших клиентов */
@@ -2123,7 +2124,7 @@ textarea:focus + .label-name {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.address:hover, .address:focus {
+.address .footer-contacts:hover, .address .footer-contacts:focus {
   color: #2196f3;
 }
 
