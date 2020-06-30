@@ -188,10 +188,13 @@ textarea:focus + .label-name {
 
   letter-spacing: 0.03em;
   color: $accent-color;
-  margin-left: 5px;
 
   @media screen and (max-width: 479px) {
     font-size: 10px;
     line-height: 1.16;
+  }
+
+  @media screen and (min-width: 330px) {
+    margin-left: 5px;
   }
 }

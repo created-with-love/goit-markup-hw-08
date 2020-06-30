@@ -999,6 +999,9 @@ body.modal-open {
   background: rgba(0, 0, 0, 0.2);
   opacity: 1;
   overflow-y: scroll;
+  padding: 15px;
+  width: 100%;
+  height: 100%;
   -webkit-transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -1018,7 +1021,7 @@ body.modal-open {
   top: 50%;
   left: 50%;
   padding: 0px 40px;
-  max-width: 95%;
+  max-width: 100%;
   width: 450px;
   min-height: 609px;
   background-color: #fff;
@@ -1040,7 +1043,7 @@ body.modal-open {
   letter-spacing: 0.03em;
 }
 
-@media screen and (min-width: 780px) {
+@media screen and (min-width: 768px) {
   .modal {
     min-width: 528px;
     min-height: 581px;
@@ -1374,13 +1377,18 @@ textarea:focus + .label-name {
   line-height: 1.16;
   letter-spacing: 0.03em;
   color: #2196f3;
-  margin-left: 5px;
 }
 
 @media screen and (max-width: 479px) {
   .contract-link {
     font-size: 10px;
     line-height: 1.16;
+  }
+}
+
+@media screen and (min-width: 330px) {
+  .contract-link {
+    margin-left: 5px;
   }
 }
 
