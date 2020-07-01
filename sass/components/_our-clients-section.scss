@@ -10,6 +10,10 @@
   justify-content: space-between;
   color: #afb1b8;
 
+  @media screen and (max-width: 450px) {
+    justify-content: center;
+  }
+
   & > .client-box-item {
     border: 1px solid currentColor;
     border-radius: 4px;

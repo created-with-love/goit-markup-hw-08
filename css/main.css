@@ -541,7 +541,7 @@ ul {
 
 @media screen and (max-width: 767px) {
   .section {
-    width: 467px;
+    max-width: 467px;
   }
 }
 
@@ -1756,6 +1756,14 @@ textarea:focus + .label-name {
   color: #afb1b8;
 }
 
+@media screen and (max-width: 450px) {
+  .clients-box {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
 .clients-box > .client-box-item {
   border: 1px solid currentColor;
   border-radius: 4px;
@@ -2273,6 +2281,12 @@ textarea:focus + .label-name {
 @media screen and (min-width: 1200px) {
   .subscribe-form__input {
     width: 358px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .subscribe-form__input {
+    width: 80%;
   }
 }
 

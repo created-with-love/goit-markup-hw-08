@@ -21,7 +21,7 @@
   padding-right: 15px;
 
   @media screen and (max-width: 767px) {
-    width: 467px;
+    max-width: 467px;
   }
 
   @media screen and (min-width: 768px) {

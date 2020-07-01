@@ -126,6 +126,10 @@
   @media screen and (min-width: 1200px) {
     width: 358px;
   }
+
+  @media screen and (max-width: 400px) {
+    width: 80%;
+  }
 }
 
 .footer-links {
