@@ -598,6 +598,8 @@ body.modal-open {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 @media screen and (max-width: 767px) {
@@ -614,14 +616,14 @@ body.modal-open {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    width: 768px;
+    max-width: 748px;
     height: 80px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .header-nav {
-    width: 1200px;
+    max-width: 1180px;
   }
 }
 
@@ -782,7 +784,8 @@ body.modal-open {
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .contacts {
-    margin-left: 84px;
+    -ms-flex-item-align: end;
+        align-self: flex-end;
   }
 }
 
@@ -804,6 +807,9 @@ body.modal-open {
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
+  .contacts {
+    font-size: 12px;
+  }
   .contacts__item:not(:last-child) {
     margin-bottom: 10px;
   }
@@ -1096,7 +1102,7 @@ body.modal-open {
   border: 1px solid #2196f3;
 }
 
-@media screen and (min-width: 780px) {
+@media screen and (min-width: 768px) {
   .form-list-item__input {
     width: 448px;
   }
@@ -1124,7 +1130,7 @@ body.modal-open {
   border: 1px solid #2196f3;
 }
 
-@media screen and (min-width: 780px) {
+@media screen and (min-width: 768px) {
   .form-list-textarea .textarea {
     width: 448px;
   }

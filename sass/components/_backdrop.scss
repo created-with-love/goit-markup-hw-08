@@ -91,7 +91,7 @@
     &:focus {
       border: 1px solid $accent-color;
     }
-    @media screen and (min-width: 780px) {
+    @media screen and (min-width: 768px) {
       width: 448px;
     }
   }
@@ -116,7 +116,7 @@
     &:focus {
       border: 1px solid $accent-color;
     }
-    @media screen and (min-width: 780px) {
+    @media screen and (min-width: 768px) {
       width: 448px;
     }
   }
