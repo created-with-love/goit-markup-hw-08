@@ -137,6 +137,11 @@ textarea:focus + .label-name {
     color: $accent-color;
     cursor: pointer;
   }
+
+  &:disabled {
+    cursor: pointer;
+    background: $second-text-color;
+  }
 }
 
 /* кнопка закрытия модалки */

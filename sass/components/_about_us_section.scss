@@ -15,23 +15,23 @@
 .about-us-item {
   max-width: 450px;
 
-  @media screen and (max-width: 479px) {
+  @media screen and (max-width: 479x) {
     &:not(:last-child) {
       margin-bottom: 30px;
     }
   }
-  @media screen and (min-width: 780px) {
-    max-width: 354px;
+  @media screen and (min-width: 768px) {
+    flex-basis: calc((100% - 30px) / 2);
   }
 
-  @media screen and (min-width: 780px) and (max-width: 1199px) {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
     &:not(:nth-last-child(2n + 1)) {
       margin-right: 30px;
     }
   }
 
   @media screen and (min-width: 1200px) {
-    max-width: 270px;
+    flex-basis: calc((100% - 90px) / 4);
     &:not(:last-child) {
       margin-right: 30px;
     }

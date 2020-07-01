@@ -539,15 +539,21 @@ ul {
   padding-right: 15px;
 }
 
-@media screen and (min-width: 780px) {
+@media screen and (max-width: 767px) {
   .section {
-    width: 768px;
+    width: 467px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .section {
+    width: 748px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .section {
-    width: 1200px;
+    width: 1180px;
   }
 }
 
@@ -559,31 +565,6 @@ img {
 
 body.modal-open {
   overflow: hidden;
-}
-
-.section {
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 15px;
-  padding-right: 15px;
-}
-
-@media screen and (min-width: 480px) {
-  .section {
-    width: 480px;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .section {
-    width: 768px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .section {
-    width: 1200px;
-  }
 }
 
 .header-nav {
@@ -598,8 +579,6 @@ body.modal-open {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-left: 15px;
-  padding-right: 15px;
 }
 
 @media screen and (max-width: 767px) {
@@ -618,6 +597,14 @@ body.modal-open {
             align-items: center;
     max-width: 748px;
     height: 80px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .header-nav {
+    max-width: 748px;
   }
 }
 
@@ -851,7 +838,7 @@ body.modal-open {
   outline: none;
 }
 
-@media screen and (min-width: 767px) {
+@media screen and (min-width: 768px) {
   .menu-button {
     display: none;
   }
@@ -878,6 +865,7 @@ body.modal-open {
 
 .hero-section {
   height: 400px;
+  min-width: 240px;
   max-width: 1600px;
   text-align: center;
   margin-left: auto;
@@ -1352,6 +1340,11 @@ textarea:focus + .label-name {
   cursor: pointer;
 }
 
+.form-submit-btn:disabled {
+  cursor: pointer;
+  background: #757575;
+}
+
 /* кнопка закрытия модалки */
 .close-btn {
   position: absolute;
@@ -1441,19 +1434,20 @@ textarea:focus + .label-name {
   max-width: 450px;
 }
 
-@media screen and (max-width: 479px) {
+@media screen and (max-width: 479x) {
   .about-us-item:not(:last-child) {
     margin-bottom: 30px;
   }
 }
 
-@media screen and (min-width: 780px) {
+@media screen and (min-width: 768px) {
   .about-us-item {
-    max-width: 354px;
+    -ms-flex-preferred-size: calc((100% - 30px) / 2);
+        flex-basis: calc((100% - 30px) / 2);
   }
 }
 
-@media screen and (min-width: 780px) and (max-width: 1199px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .about-us-item:not(:nth-last-child(2n + 1)) {
     margin-right: 30px;
   }
@@ -1461,7 +1455,8 @@ textarea:focus + .label-name {
 
 @media screen and (min-width: 1200px) {
   .about-us-item {
-    max-width: 270px;
+    -ms-flex-preferred-size: calc((100% - 90px) / 4);
+        flex-basis: calc((100% - 90px) / 4);
   }
   .about-us-item:not(:last-child) {
     margin-right: 30px;
@@ -1593,12 +1588,12 @@ textarea:focus + .label-name {
 .team-section {
   background-color: #f5f4fa;
   padding-bottom: 60px;
-  max-width: 480px;
+  max-width: 460px;
 }
 
 @media screen and (min-width: 768px) {
   .team-section {
-    max-width: 768px;
+    max-width: 748px;
   }
   .team-section-box {
     display: -webkit-box;
@@ -1611,7 +1606,7 @@ textarea:focus + .label-name {
 
 @media screen and (min-width: 1200px) {
   .team-section {
-    max-width: 1200px;
+    max-width: 1180px;
     padding-bottom: 94px;
   }
 }
