@@ -834,6 +834,10 @@ body.modal-open {
   margin-right: 15px;
 }
 
+.menu-button:hover {
+  cursor: pointer;
+}
+
 .menu-button:focus {
   outline: none;
 }
@@ -2046,6 +2050,7 @@ textarea:focus + .label-name {
 
 .list-of-products .list-of-products-item {
   border: 1px solid transparent;
+  opacity: 1;
   width: 100%;
 }
 
@@ -2140,6 +2145,16 @@ textarea:focus + .label-name {
 .product-name,
 .product-type {
   padding-left: 24px;
+}
+
+.is-hidden {
+  position: absolute;
+  display: none;
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+  overflow: hidden;
+  border: 0;
 }
 
 .footer {

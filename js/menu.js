@@ -10,5 +10,13 @@
     menuBtnRef.setAttribute('aria-expanded', !expanded);
 
     mobileMenuRef.classList.toggle('is-open');
+
+    window.addEventListener('keydown', onEscKeyPress);
+    function onEscKeyPress(evt) {
+      if (evt.code === 'Escape') {
+        menuBtnRef.classList.remove('is-open');
+        mobileMenuRef.classList.remove('is-open');
+      }
+    }
   });
 })();

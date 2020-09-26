@@ -36,7 +36,7 @@
                 >
               </li>
               <li class="site-nav__item">
-                <a href="" class="site-nav__link">Контакты</a>
+                <a href="#address" class="site-nav__link">Контакты</a>
               </li>
             </ul>
 
@@ -89,24 +89,38 @@
       <section class="section">
         <ul class="filter-list">
           <li>
-            <button type="button" class="portfolio-button">Все</button>
+            <button type="button" class="portfolio-button" data-value="AllBtn">
+              Все
+            </button>
           </li>
           <li>
-            <button type="button" class="portfolio-button">Веб-сайты</button>
+            <button type="button" class="portfolio-button" data-value="WebsBtn">
+              Веб-сайты
+            </button>
           </li>
           <li>
-            <button type="button" class="portfolio-button">Приложения</button>
+            <button type="button" class="portfolio-button" data-value="AppsBtn">
+              Приложения
+            </button>
           </li>
           <li>
-            <button type="button" class="portfolio-button">Дизайн</button>
+            <button
+              type="button"
+              class="portfolio-button"
+              data-value="DesignBtn"
+            >
+              Дизайн
+            </button>
           </li>
           <li>
-            <button type="button" class="portfolio-button">Маркетинг</button>
+            <button type="button" class="portfolio-button" data-value="MarkBtn">
+              Маркетинг
+            </button>
           </li>
         </ul>
 
         <ul class="list-of-products">
-          <li class="list-of-products-item">
+          <li class="list-of-products-item" data-value="Website">
             <a href="" class="product-item">
               <div class="product-item__thumb">
                 <picture>
@@ -154,7 +168,7 @@
               <p class="product-type">Веб-сайт</p>
             </a>
           </li>
-          <li class="list-of-products-item">
+          <li class="list-of-products-item" data-value="Design">
             <a href="" class="product-item">
               <div class="product-item__thumb">
                 <picture>
@@ -202,7 +216,7 @@
               <p class="product-type">Дизайн</p>
             </a>
           </li>
-          <li class="list-of-products-item">
+          <li class="list-of-products-item" data-value="Application">
             <a href="" class="product-item">
               <div class="product-item__thumb">
                 <picture>
@@ -250,7 +264,7 @@
               <p class="product-type">Приложение</p>
             </a>
           </li>
-          <li class="list-of-products-item">
+          <li class="list-of-products-item" data-value="Marketing">
             <a href="" class="product-item">
               <div class="product-item__thumb">
                 <picture>
@@ -298,7 +312,11 @@
               <p class="product-type">Маркетинг</p>
             </a>
           </li>
-          <li class="list-of-products-item">
+          <li
+            class="list-of-products-item"
+            data-value="Application"
+            id="project-boxes"
+          >
             <a href="" class="product-item">
               <div class="product-item__thumb">
                 <picture>
@@ -346,7 +364,7 @@
               <p class="product-type">Приложение</p>
             </a>
           </li>
-          <li class="list-of-products-item">
+          <li class="list-of-products-item" data-value="Website">
             <a href="" class="product-item">
               <div class="product-item__thumb">
                 <picture>
@@ -394,7 +412,7 @@
               <p class="product-type">Веб-сайт</p>
             </a>
           </li>
-          <li class="list-of-products-item">
+          <li class="list-of-products-item" data-value="Design">
             <a href="" class="product-item">
               <div class="product-item__thumb">
                 <picture>
@@ -442,7 +460,7 @@
               <p class="product-type">Дизайн</p>
             </a>
           </li>
-          <li class="list-of-products-item">
+          <li class="list-of-products-item" data-value="Marketing">
             <a href="" class="product-item">
               <div class="product-item__thumb">
                 <picture>
@@ -490,7 +508,7 @@
               <p class="product-type">Маркетинг</p>
             </a>
           </li>
-          <li class="list-of-products-item">
+          <li class="list-of-products-item" data-value="Application">
             <a href="" class="product-item">
               <div class="product-item__thumb">
                 <picture>
@@ -553,7 +571,7 @@
               ><span class="footer-logo-studio"> Studio</span>
             </a>
 
-            <address class="address">
+            <address class="address" id="address">
               г.Киев, пр-т Леси Украинки, 26<br />
               <a href="mailto:info@example.com" class="footer-contacts"
                 >info@example.com</a
@@ -647,5 +665,6 @@
     </footer>
 
     <script src="./js/menu.js"></script>
+    <script src="./js/portfolio-filter.js" type="module"></script>
   </body>
 </html>
